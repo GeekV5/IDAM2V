@@ -1,7 +1,6 @@
 import sys
 import gzip
 from collections import Counter
-from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm, metrics
 import numpy as np
 import networkx as nx
@@ -17,22 +16,15 @@ np.seterr(divide='ignore', invalid='ignore')
 plt.rcParams['font.size'] = 15.0
 from scipy import stats
 import random
-# import cPickle
-import argparse
 
 from math import *
 from sklearn.metrics.pairwise import pairwise_distances
-from sklearn.cluster import KMeans
 import scipy.spatial.distance as ssd
 import scipy.sparse as sp
-
 import time
 import torch
 import torch.nn as nn
-from torch.autograd import Variable
-import torch.nn.functional as F
 import torch.optim as optim
-from pygcn.utils import accuracy
 from pygcn.models import GCN
 
 
@@ -72,8 +64,6 @@ def calculate_performace(test_num, pred_y, labels):
 def get_normalized_values_by_column(array, fea_length):
     max_col = [-100000] * fea_length
     min_col = [100000] * fea_length
-    # for key in array.keys():
-    #    indvidual_fea =  array[key]
     for values in array:
         for index in range(len(values)):
             if values[index] > max_col[index]:
@@ -82,7 +72,6 @@ def get_normalized_values_by_column(array, fea_length):
                 min_col[index] = values[index]
     for values in array:
         for index in range(len(values)):
-            # print values[index],min_col[index], max_col[index]
             values[index] = float(values[index] - min_col[index]) / (max_col[index] - min_col[index])
     fw = open('saved_min_max', 'w')
     for val in min_col:
@@ -101,7 +90,6 @@ def get_normalized_given_max_min(array):
     max_col = tmp_data[1, :]
     for x in range(array.shape[0]):
         for y in range(array.shape[1]):
-            # print values[index],min_col[index], max_col[index]
             normalized_data[x][y] = float(array[x][y] - min_col[y]) / (max_col[y] - min_col[y])
     return normalized_data
 
@@ -150,7 +138,6 @@ def read_snp_coordinate(snp_file='SNP/snp142Common.txt.gz'):
     with gzip.open(snp_file, 'r') as fp:
         for line in fp:
             values = line.rstrip('\r\n').split('\t')
-            # key = values[1] + values[6]
             snp_dict[values[4]] = values[1] + '_' + values[2] + '_' + values[6]
 
     return snp_dict
@@ -192,15 +179,11 @@ def read_GWAS_catalog_disease(gwas_file='SNP/gwas_catalog_ensembl_mapping_v1.0-d
             if values[7] == '' or values[-13] == '':
                 continue
             disease = values[7]
-
             gwas_dis.setdefault(disease.upper(), set()).add(values[-13])
-            # gwas_snp_coor[snp_id] = chr_name + '_' + values[12]
-    # pdb.set_trace()
     return gwas_dis
 
 
 def read_gwas_ld_region(gwas_ld_file='SNP/GWAS-LD-region-snps.csv'):
-    # gwas_dis ={}
     snp_dis = {}
     with open(gwas_ld_file, 'r') as fp:
         head = True
@@ -215,11 +198,9 @@ def read_gwas_ld_region(gwas_ld_file='SNP/GWAS-LD-region-snps.csv'):
                     diseases = values[1].split(',')
                     for dis in diseases:
                         snp_dis.setdefault(dis.upper(), []).append(SNP)
-                        # gwas_dis.setdefault(dis.upper(), set()).add(GWAS_SNP)
                 else:
                     SNP, GWAS_SNP, PMID, disease = line.rstrip('\r\n').split(',')
                     snp_dis.setdefault(disease.upper(), []).append(SNP)
-                    # gwas_dis.setdefault(disease.upper(), set()).add(GWAS_SNP)
             except:
                 pdb.set_trace()
 
@@ -296,26 +277,20 @@ def plot_gaussian_distribution(h1, h2):
     legend = ax.legend(loc='upper right')
 
     plt.xlabel('FPKM')
-    # plt.xlim(0,0.2)
-
     plt.show()
 
 
 def calculate_pcc_old(data, data_source):
-    print(sys._getframe().f_lineno, 'calculating PCC distance')
+    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno, 'calculating PCC distance')
     rows, cols = data.shape
-    # data_pcc = np.zeros(rows, cols)
     pcc_list = []
-    # data = normalize(data, axis=0)
     scaler = StandardScaler()
-    # scaler = MinMaxScaler()
     scaler.fit(data)
     data = scaler.transform(data)
     print(sys._getframe().f_lineno, data.shape)
     for i in range(rows):  # rows are the number of rows in the matrix.
         pcc_list = pcc_list + [stats.pearsonr(data[i], data[j])[0] for j in range(i) if j != i]
 
-    # pdb.set_trace()
     print(sys._getframe().f_lineno, len(pcc_list))
 
     plot_hist_distance(pcc_list, 'PCC', data_source)
@@ -327,7 +302,6 @@ def calculate_pcc_hist(mRNA_data, lncRNA_data):
 
     corr_pval = []
     corr_ind = []
-    # pdb.set_trace()
     for i, mval in enumerate(lncRNA_data):
         tmp = []
         ind_j = []
@@ -336,10 +310,6 @@ def calculate_pcc_hist(mRNA_data, lncRNA_data):
             abs_rval = np.absolute(rval)
             if abs_rval > 0.3 and pval <= 0.01:
                 corr_pval.append(abs_rval)
-
-        # corr_pval.append(tmp)
-    # print len(corr_pval)
-    # plot_hist_distance(corr_pval, 'PCC', 'gencode')        #corr_ind.append(ind_j)
 
     return corr_pval
 
@@ -370,7 +340,6 @@ def calculate_pcc_fast(A, B):
     sB = B.sum(0)
 
     # Basically there are four parts in the formula. Wecalculate_pcc would compute them one-by-one
-    # p1 = N*np.einsum('ij,ik->kj',A,B)
     p1 = N * np.dot(B.T, A)
     p2 = sA * sB[:, None]
     p3 = N * ((B ** 2).sum(0)) - (sB ** 2)
@@ -1682,13 +1651,8 @@ def calculate_auc(output, all_dis, new_mirna_disease, disease_miRNA_list):
             labels.append(0)
             i = mirna_dict[mirna]
             probs.append(output[i, j])
-        print('line1693:', labels)
-        print('line1694:', probs)
 
     Figure = plt.figure()
-    # pdb.set_trace()
-    print('line1698:', labels)
-    print('line1699:', probs)
     auc = plot_roc_curve_miRNA(labels, probs, 'DimiG')
     plt.plot([0, 1], [0, 1], 'k--')
     plt.xlim([0, 1])
@@ -1709,9 +1673,9 @@ def test(model, features, adj, labels, idx_test, all_dis, new_mirna_disease, dis
     loss_test = criteria(output[idx_test], labels[idx_test])
     auc_test = calculate_auc(1 - output[idx_test].data.cpu().numpy(), all_dis, new_mirna_disease, disease_miRNA_list)
 
-    print(sys._getframe().f_lineno, "Test set results:",
+    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  "| Test set results:",
           "loss= {:.4f}".format(loss_test.item()))
-    print(sys._getframe().f_lineno, auc_test)
+    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  '|', auc_test)
 
 
 def run_gcn():
@@ -1727,13 +1691,13 @@ def run_gcn():
     # print(sys._getframe().f_lineno, idx_val.shape)
     # print(sys._getframe().f_lineno, idx_test.shape)
     # pdb.set_trace()
+
     # Model and optimizer
     np.random.seed(0)
     torch.manual_seed(0)
     cuda = False
     if cuda:
         torch.cuda.manual_seed(0)
-    # pdb.set_trace()
     num_dis = len(all_dis)
     model = GCN(nfeat=features.shape[1],
                 nhid=num_dis * 3,
@@ -1757,8 +1721,8 @@ def run_gcn():
     epochs = 50
     for epoch in range(epochs):
         train(epoch, model, optimizer, features, adj, idx_train, labels, idx_val, criterion)
-    print(sys._getframe().f_lineno, "Optimization Finished!")
-    print(sys._getframe().f_lineno, "Total time elapsed: {:.4f}s".format(time.time() - t_total))
+    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  "| Optimization Finished!")
+    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  "| Total time elapsed: {:.4f}s".format(time.time() - t_total))
 
     # Testing
     test(model, features, adj, labels, idx_test, all_dis, new_mirna_disease, disease_miRNA_data, criterion)

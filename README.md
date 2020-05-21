@@ -1,30 +1,17 @@
 # IDAM2V for inferring disease-associated miRNAs
 The microRNAs (miRNAs) play crucial roles in many biological processes involved in diseases and miRNAs function with protein coding genes (PCGs). In this study, we present a semi-supervised multi-label framework to integrate PCG-PCG interactions, PCG-miRNA interactions, PCG-disease associations using graph convolutional network (GCN). IDAM2V is then trained on a graph, which is further used to score associations between diseases and miRNAs.
 
-# System Requirements
+# Development Environment
+OS: Windows 10 Pro
+RAM:8GB
+CPU:Intel® Core™ i7-4790
+GPU:GT720
 
-## Hardware Requirements
-
-The IDAM2V requires only a standard computer with enough RAM to support the operations. For minimal performance, this will be a computer with about 8 GB of RAM. For optimal performance, we recommend a computer with the following specs:
-
-  * RAM: 4GB+ 
-  * CPU: Intel® Core™ i7-4790
-
-### OS Requirements
-
-This package is tested in  Windows 10 Pro operating systems. The package has been tested on the following systems:
-
-
-
-## Package dependencies
-  * <a href='https://github.com/scikit-learn/scikit-learn' target='_blank'>sklearn 0.22</a> <br>
-  * GCN
-  * <a href=https://pytorch.org/>PyTorch  1.3.1+cpu</a> <br>
+## Packages dependencies
   * Python 3.7
-
-## Installation of GCN
-Here we modified the orginal GCN (https://github.com/tkipf/pygcn) to support multi-label learning. <br> 
-```python setup.py install```
+  * sklearn 0.22
+  * torch  1.3.1+cpu
+  
 
 # Demo
 1. To run the demo code, some big file needs be downloaded from other website: <br>
