@@ -27,6 +27,14 @@ import torch.nn as nn
 import torch.optim as optim
 from pygcn.models import GCN
 
+# 日志记录
+import logging
+
+logger = logging.getLogger(__name__)
+from utils import Logger
+
+logger = Logger.logs()
+
 
 def point_overlap(min1, max1, min2, max2):
     return max(0, min(max1, max2) - max(min1, min2))
@@ -281,7 +289,7 @@ def plot_gaussian_distribution(h1, h2):
 
 
 def calculate_pcc_old(data, data_source):
-    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno, 'calculating PCC distance')
+    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, 'calculating PCC distance')
     rows, cols = data.shape
     pcc_list = []
     scaler = StandardScaler()
@@ -561,6 +569,7 @@ def read_gtex_gene_map(map_file='data/gtex/xrefs-human.tsv'):
                 values = line.rstrip().split()
                 entrid_ensemid[values[0]] = values[-1]
     return entrid_ensemid
+
 
 # 读取GTEx数据集
 def read_gtex_expression(RNAseq_file='data/gtex/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz',
@@ -898,7 +907,7 @@ def read_result_mrna(result_file):
             label = [int(val) for val in values[1:]]
         elif 'ROC_probability' in line:
             probability = [float(val) for val in values[1:]]
-            print('label:',label)
+            print('label:', label)
             print('proba', probability)
             fpr, tpr, thresholds = roc_curve(label, probability)  # probas_[:, 1])
             roc_auc = auc(fpr, tpr)
@@ -1156,7 +1165,7 @@ def read_gencode_mirna_annotation():
     gene_id_position = {}
     fp = gzip.open('data/gencode.v19.genes.v6p_model.patched_contigs.gtf.gz')
     for line in fp:
-        if  b'#' in line:
+        if b'#' in line:
             continue
         values = line.rstrip('\r\n').split('\t')
         if values[2] != 'gene':
@@ -1389,7 +1398,8 @@ def read_expression_data(input_file, data=3):
     for key, val in disease_gene_dict.items():
         if len(val) < 50:
             continue
-        if 5 * len(val) > len(all_mrnas_num):  # to remove those diseases who are parent diseases of most disease, like cancer
+        if 5 * len(val) > len(
+                all_mrnas_num):  # to remove those diseases who are parent diseases of most disease, like cancer
             continue
 
         all_other_disease_mRNA = all_other_disease_mRNA | val
@@ -1516,7 +1526,9 @@ def read_expression_data(input_file, data=3):
 
     labels = np.array(labels)
 
-    return adj, torch.FloatTensor(features), torch.FloatTensor(labels), torch.LongTensor(np.array(idx_train)), torch.LongTensor(np.array(idx_val)), torch.LongTensor(np.array(idx_test)), all_dis, new_mirna_disease, disease_miRNA_data
+    return adj, torch.FloatTensor(features), torch.FloatTensor(labels), torch.LongTensor(
+        np.array(idx_train)), torch.LongTensor(np.array(idx_val)), torch.LongTensor(
+        np.array(idx_test)), all_dis, new_mirna_disease, disease_miRNA_data
 
 
 def normalize(mx):
@@ -1673,9 +1685,9 @@ def test(model, features, adj, labels, idx_test, all_dis, new_mirna_disease, dis
     loss_test = criteria(output[idx_test], labels[idx_test])
     auc_test = calculate_auc(1 - output[idx_test].data.cpu().numpy(), all_dis, new_mirna_disease, disease_miRNA_list)
 
-    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  "| Test set results:",
+    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, "| Test set results:",
           "loss= {:.4f}".format(loss_test.item()))
-    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  '|', auc_test)
+    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, '|', auc_test)
 
 
 def run_gcn():
@@ -1719,14 +1731,21 @@ def run_gcn():
     # Train model
     t_total = time.time()
     epochs = 50
+    log.logger
     for epoch in range(epochs):
         train(epoch, model, optimizer, features, adj, idx_train, labels, idx_val, criterion)
-    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  "| Optimization Finished!")
-    print('方法：' ,sys._getframe().f_code.co_name, '行数：',sys._getframe().f_lineno,  "| Total time elapsed: {:.4f}s".format(time.time() - t_total))
+
+    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, "| Optimization Finished!")
+    logger.info('Optimization Finished!')
+    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno,
+          "| Total time elapsed: {:.4f}s".format(time.time() - t_total))
+    logger.info("Total time elapsed: {:.4f}s".format(time.time() - t_total))
 
     # Testing
     test(model, features, adj, labels, idx_test, all_dis, new_mirna_disease, disease_miRNA_data, criterion)
 
 
-if __name__ == '__main__':
-    run_gcn()
+# if __name__ == '__main__':
+logger.info('程序开始执行')
+run_gcn()
+logger.info('程序执行结束')
