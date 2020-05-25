@@ -1,0 +1,5 @@
+[2020-05-24 11:08:43][INFO][line:48]  程序开始执行
+[2020-05-24 11:08:43][INFO][line:48]  2
+[2020-05-24 11:08:47][INFO][line:48]  read expresion file: data/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz
+[2020-05-24 11:08:47][INFO][line:48]  # of tissues:53
+[2020-05-24 11:09:24][INFO][line:48]  len(interact_pair):1481757 len(all_genes):18883

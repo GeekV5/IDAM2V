@@ -14,22 +14,25 @@ class logs(object):
                   'WARNING': logging.WARNING,
                   'ERROR': logging.ERROR,
                   'CRITICAL': logging.CRITICAL}
-        # 创建文件目录
+        # 创建日志文件存放目录
         logs_dir = "logs"
         if os.path.exists(logs_dir) and os.path.isdir(logs_dir):
             pass
         else:
             os.mkdir(logs_dir)
-        # 修改log保存位置
 
-        timestamp = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+        # 修改log保存位置
+        timestamp = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
         logfilename = '%s.txt' % timestamp
         logfilepath = os.path.join(logs_dir, logfilename)
         rotatingFileHandler = logging.handlers.RotatingFileHandler(filename=logfilepath,
                                                                    maxBytes=1024 * 1024 * 50,
                                                                    backupCount=5)
         # 设置输出格式
-        formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(module)s] [%(levelname)s]  %(message)s',
+        # formatter = logging.Formatter(
+        #     '[%(asctime)s][%(filename)s][%(funcName)s][%(levelname)s][%(lineno)s]  %(message)s',
+        #     '%Y-%m-%d %H:%M:%S')
+        formatter = logging.Formatter('[%(asctime)s][%(levelname)s]  %(message)s',
                                       '%Y-%m-%d %H:%M:%S')
         rotatingFileHandler.setFormatter(formatter)
         # 控制台句柄

@@ -1,0 +1,263 @@
+[2020-05-25 10:51:33][INFO]  ====Start====
+[2020-05-25 10:51:33][INFO]  2
+[2020-05-25 10:51:38][INFO]  Read Expresion File: data/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz
+[2020-05-25 10:51:38][INFO]  # of tissues:53
+[2020-05-25 10:52:14][INFO]  len(interact_pair):1481757 len(all_genes):18883
+[2020-05-25 10:52:17][INFO]  173662 17686 1725
+[2020-05-25 10:52:18][INFO]  6188
+[2020-05-25 10:52:29][INFO]  non zero 435570
+[2020-05-25 10:52:29][INFO]  len(new_mirna_disease):548
+[2020-05-25 10:52:29][INFO]  disease:248
+[2020-05-25 10:52:30][INFO]  Epochs:50
+[2020-05-25 10:52:31][INFO]  Epoch: 0001 loss_train: 6.4850 loss_val: 5.3428 time: 0.9984s
+[2020-05-25 10:52:32][INFO]  Epoch: 0002 loss_train: 6.0932 loss_val: 4.9605 time: 0.9700s
+[2020-05-25 10:52:33][INFO]  Epoch: 0003 loss_train: 5.5892 loss_val: 4.5897 time: 0.9152s
+[2020-05-25 10:52:34][INFO]  Epoch: 0004 loss_train: 5.2394 loss_val: 4.2353 time: 0.9424s
+[2020-05-25 10:52:35][INFO]  Epoch: 0005 loss_train: 4.9226 loss_val: 3.9136 time: 1.0204s
+[2020-05-25 10:52:36][INFO]  Epoch: 0006 loss_train: 4.6341 loss_val: 3.6272 time: 0.9819s
+[2020-05-25 10:52:37][INFO]  Epoch: 0007 loss_train: 4.1511 loss_val: 3.3585 time: 0.9823s
+[2020-05-25 10:52:38][INFO]  Epoch: 0008 loss_train: 3.8751 loss_val: 3.0991 time: 0.9781s
+[2020-05-25 10:52:39][INFO]  Epoch: 0009 loss_train: 3.6600 loss_val: 2.8618 time: 0.9932s
+[2020-05-25 10:52:40][INFO]  Epoch: 0010 loss_train: 3.4058 loss_val: 2.6496 time: 0.9205s
+[2020-05-25 10:52:41][INFO]  Epoch: 0011 loss_train: 3.1208 loss_val: 2.4439 time: 0.9722s
+[2020-05-25 10:52:42][INFO]  Epoch: 0012 loss_train: 2.8470 loss_val: 2.2465 time: 1.0889s
+[2020-05-25 10:52:43][INFO]  Epoch: 0013 loss_train: 2.6508 loss_val: 2.0650 time: 0.9580s
+[2020-05-25 10:52:44][INFO]  Epoch: 0014 loss_train: 2.4479 loss_val: 1.8808 time: 0.9753s
+[2020-05-25 10:52:45][INFO]  Epoch: 0015 loss_train: 2.2800 loss_val: 1.7039 time: 1.0436s
+[2020-05-25 10:52:46][INFO]  Epoch: 0016 loss_train: 2.0616 loss_val: 1.5576 time: 1.0243s
+[2020-05-25 10:52:47][INFO]  Epoch: 0017 loss_train: 1.8823 loss_val: 1.4410 time: 1.0307s
+[2020-05-25 10:52:48][INFO]  Epoch: 0018 loss_train: 1.7958 loss_val: 1.3337 time: 1.0170s
+[2020-05-25 10:52:49][INFO]  Epoch: 0019 loss_train: 1.6203 loss_val: 1.2273 time: 1.0136s
+[2020-05-25 10:52:50][INFO]  Epoch: 0020 loss_train: 1.4734 loss_val: 1.1119 time: 1.0550s
+[2020-05-25 10:52:51][INFO]  Epoch: 0021 loss_train: 1.3681 loss_val: 1.0045 time: 1.0244s
+[2020-05-25 10:52:52][INFO]  Epoch: 0022 loss_train: 1.2646 loss_val: 0.9282 time: 0.9784s
+[2020-05-25 10:52:53][INFO]  Epoch: 0023 loss_train: 1.1910 loss_val: 0.8650 time: 0.9628s
+[2020-05-25 10:52:54][INFO]  Epoch: 0024 loss_train: 1.1036 loss_val: 0.8189 time: 1.0114s
+[2020-05-25 10:52:55][INFO]  Epoch: 0025 loss_train: 1.0537 loss_val: 0.7818 time: 1.0194s
+[2020-05-25 10:52:56][INFO]  Epoch: 0026 loss_train: 0.9741 loss_val: 0.7524 time: 1.0189s
+[2020-05-25 10:52:57][INFO]  Epoch: 0027 loss_train: 0.9625 loss_val: 0.7348 time: 1.0439s
+[2020-05-25 10:52:58][INFO]  Epoch: 0028 loss_train: 0.9541 loss_val: 0.7298 time: 1.0233s
+[2020-05-25 10:53:00][INFO]  Epoch: 0029 loss_train: 0.9082 loss_val: 0.7260 time: 1.0019s
+[2020-05-25 10:53:01][INFO]  Epoch: 0030 loss_train: 0.8884 loss_val: 0.7238 time: 1.0584s
+[2020-05-25 10:53:02][INFO]  Epoch: 0031 loss_train: 0.8767 loss_val: 0.7158 time: 1.0577s
+[2020-05-25 10:53:03][INFO]  Epoch: 0032 loss_train: 0.8503 loss_val: 0.7071 time: 0.9744s
+[2020-05-25 10:53:04][INFO]  Epoch: 0033 loss_train: 0.8554 loss_val: 0.7015 time: 1.0397s
+[2020-05-25 10:53:05][INFO]  Epoch: 0034 loss_train: 0.8473 loss_val: 0.7024 time: 1.0484s
+[2020-05-25 10:53:06][INFO]  Epoch: 0035 loss_train: 0.8337 loss_val: 0.7032 time: 1.0258s
+[2020-05-25 10:53:07][INFO]  Epoch: 0036 loss_train: 0.8284 loss_val: 0.7029 time: 0.9754s
+[2020-05-25 10:53:08][INFO]  Epoch: 0037 loss_train: 0.8268 loss_val: 0.7011 time: 1.0056s
+[2020-05-25 10:53:09][INFO]  Epoch: 0038 loss_train: 0.8299 loss_val: 0.6986 time: 1.0459s
+[2020-05-25 10:53:10][INFO]  Epoch: 0039 loss_train: 0.8097 loss_val: 0.6944 time: 1.0457s
+[2020-05-25 10:53:11][INFO]  Epoch: 0040 loss_train: 0.8182 loss_val: 0.6907 time: 1.0627s
+[2020-05-25 10:53:12][INFO]  Epoch: 0041 loss_train: 0.8025 loss_val: 0.6858 time: 1.0434s
+[2020-05-25 10:53:13][INFO]  Epoch: 0042 loss_train: 0.8024 loss_val: 0.6799 time: 1.1299s
+[2020-05-25 10:53:14][INFO]  Epoch: 0043 loss_train: 0.7969 loss_val: 0.6718 time: 1.0386s
+[2020-05-25 10:53:15][INFO]  Epoch: 0044 loss_train: 0.7788 loss_val: 0.6640 time: 0.9774s
+[2020-05-25 10:53:16][INFO]  Epoch: 0045 loss_train: 0.7726 loss_val: 0.6508 time: 0.9809s
+[2020-05-25 10:53:17][INFO]  Epoch: 0046 loss_train: 0.7796 loss_val: 0.6369 time: 1.0059s
+[2020-05-25 10:53:18][INFO]  Epoch: 0047 loss_train: 0.7648 loss_val: 0.6274 time: 1.0172s
+[2020-05-25 10:53:19][INFO]  Epoch: 0048 loss_train: 0.7558 loss_val: 0.6265 time: 1.0521s
+[2020-05-25 10:53:20][INFO]  Epoch: 0049 loss_train: 0.7443 loss_val: 0.6253 time: 1.0604s
+[2020-05-25 10:53:21][INFO]  Epoch: 0050 loss_train: 0.7407 loss_val: 0.6249 time: 1.0121s
+[2020-05-25 10:53:21][INFO]  Optimization Finished!
+[2020-05-25 10:53:21][INFO]  Total time elapsed: 51.2079s
+[2020-05-25 10:53:22][INFO]  (1034, 248)
+[2020-05-25 10:53:22][INFO]  248 1034
+[2020-05-25 10:53:22][INFO]  disease
+[2020-05-25 10:53:22][INFO]  scoring
+[2020-05-25 10:53:22][INFO]  91
+[2020-05-25 10:53:22][DEBUG]  findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=15.0.
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe MDL2 Assets' (segmdl2.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Candara' (Candarai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft JhengHei' (msjhl.ttc) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Symbol' (symbol.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft Yi Baiti' (msyi.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Calibri' (calibrii.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Courier New' (courbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (segoeui.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft JhengHei' (msjhbd.ttc) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Palatino Linotype' (palabi.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal bold normal>) = 4.971363636363637
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft YaHei' (msyhl.ttc) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal bold normal>) = 3.9713636363636367
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Candara' (Candaraz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DengXian' (Dengl.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Wingdings' (wingding.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (seguibli.ttf) italic normal black normal>) = 11.525
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal roman normal>) = 10.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Candara' (Candaral.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Calibri' (calibrili.ttf) italic normal light normal>) = 11.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Arial' (ariblk.ttf) normal normal black normal>) = 6.888636363636364
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe Script' (segoesc.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft PhagsPa' (phagspa.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Constantia' (constani.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Consolas' (consolaz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Gadugi' (gadugib.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Myanmar Text' (mmrtextb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Mongolian Baiti' (monbaiti.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe Print' (segoepr.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Candara' (Candara.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (segoeuil.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI Symbol' (seguisym.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DengXian' (Deng.ttf) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'FangSong' (simfang.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal roman normal>) = 11.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Calibri' (calibri.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Corbel' (corbel.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (seguisli.ttf) italic normal light normal>) = 11.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'DengXian' (Dengb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Candara' (Candarali.ttf) italic normal light normal>) = 11.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Arial' (arialbi.ttf) italic normal bold normal>) = 7.698636363636363
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Corbel' (corbeli.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (segoeuib.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Leelawadee UI' (LeelUIsl.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (seguibl.ttf) normal normal black normal>) = 10.525
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Yu Gothic' (YuGothL.ttc) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Sitka Small' (SitkaZ.ttc) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (segoeuiz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Palatino Linotype' (palab.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'MS Gothic' (msgothic.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Courier New' (courbi.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal roman normal>) = 11.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Yu Gothic' (YuGothM.ttc) normal normal medium normal>) = 10.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft New Tai Lue' (ntailu.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Corbel' (corbelb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Comic Sans MS' (comicz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Yu Gothic' (YuGothR.ttc) normal normal regular normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Lucida Console' (lucon.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Leelawadee UI' (LeelawUI.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'MV Boli' (mvboli.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Nirmala UI' (NirmalaS.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Franklin Gothic Medium' (framd.ttf) normal normal medium normal>) = 10.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (segoeuii.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'HoloLens MDL2 Assets' (holomdl2.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Tahoma' (tahoma.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Sitka Small' (SitkaB.ttc) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Myanmar Text' (mmrtext.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'MingLiU-ExtB' (mingliub.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Sitka Small' (SitkaI.ttc) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Malgun Gothic' (malgunbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft Himalaya' (himalaya.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Malgun Gothic' (malgun.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Cambria' (cambriai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft Sans Serif' (micross.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Ink Free' (Inkfree.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft Tai Le' (taile.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'SimHei' (simhei.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Consolas' (consolab.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'KaiTi' (simkai.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft New Tai Lue' (ntailub.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Ebrima' (ebrima.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft YaHei' (msyh.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Sitka Small' (Sitka.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Yu Gothic' (YuGothB.ttc) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Constantia' (constanb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Corbel' (corbelz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Nirmala UI' (Nirmala.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Corbel' (corbelli.ttf) italic normal light normal>) = 11.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Javanese Text' (javatext.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Palatino Linotype' (pala.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Nirmala UI' (NirmalaB.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft YaHei' (msyhbd.ttc) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Franklin Gothic Medium' (framdit.ttf) italic normal medium normal>) = 11.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI Historic' (seguihis.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Calibri' (calibril.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Arial' (arialbd.ttf) normal normal bold normal>) = 6.698636363636363
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Corbel' (corbell.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Leelawadee UI' (LeelaUIb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Cambria' (cambria.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft JhengHei' (msjh.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Candara' (Candarab.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (segoeuisl.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Tahoma' (tahomabd.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Consolas' (consolai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'SimSun-ExtB' (simsunb.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'SimSun' (simsun.ttc) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Sylfaen' (sylfaen.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Calibri' (calibrib.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Comic Sans MS' (comici.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (seguili.ttf) italic normal light normal>) = 11.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Ebrima' (ebrimabd.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft Tai Le' (taileb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Constantia' (constan.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'MT Extra' (mtextra.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Gabriola' (Gabriola.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Consolas' (consola.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (seguisb.ttf) normal normal semibold normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Cambria' (cambriaz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe Script' (segoescb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Lucida Sans Unicode' (l_10646.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Microsoft PhagsPa' (phagspab.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI' (seguisbi.ttf) italic normal semibold normal>) = 11.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Palatino Linotype' (palai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Calibri' (calibriz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Malgun Gothic' (malgunsl.ttf) normal normal light normal>) = 10.24
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Cambria' (cambriab.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'icomoon' (iqiyi_logov6.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Marlett' (marlett.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe UI Emoji' (seguiemj.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Bahnschrift' (bahnschrift.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Times New Roman' (times.ttf) normal normal roman normal>) = 10.145
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Gadugi' (gadugi.ttf) normal normal 400 normal>) = 10.05
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Constantia' (constanz.ttf) italic normal bold normal>) = 11.335
+[2020-05-25 10:53:22][DEBUG]  findfont: score(<Font 'Segoe Print' (segoeprb.ttf) normal normal bold normal>) = 10.335
+[2020-05-25 10:53:22][DEBUG]  findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=15.0 to DejaVu Sans ('E:\\Program Files\\Python37\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+[2020-05-25 10:53:22][INFO]  Test set results:loss= 0.2500
+[2020-05-25 10:53:22][INFO]  0.7412891322830364
+[2020-05-25 10:53:22][INFO]  =====End=====

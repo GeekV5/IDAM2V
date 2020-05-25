@@ -1,0 +1,263 @@
+[2020-05-24 11:06:16][Logger.py][info][INFO][45]  程序开始执行
+[2020-05-24 11:06:16][Logger.py][info][INFO][45]  2
+[2020-05-24 11:06:20][Logger.py][info][INFO][45]  read expresion file: data/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz
+[2020-05-24 11:06:20][Logger.py][info][INFO][45]  # of tissues:53
+[2020-05-24 11:06:55][Logger.py][info][INFO][45]  len(interact_pair):1481757 len(all_genes):18883
+[2020-05-24 11:06:59][Logger.py][info][INFO][45]  173662 17686 1725
+[2020-05-24 11:07:00][Logger.py][info][INFO][45]  6188
+[2020-05-24 11:07:10][Logger.py][info][INFO][45]  non zero 435570
+[2020-05-24 11:07:10][Logger.py][info][INFO][45]  len(new_mirna_disease):548
+[2020-05-24 11:07:10][Logger.py][info][INFO][45]  disease:248
+[2020-05-24 11:07:11][Logger.py][info][INFO][45]  Epochs:50
+[2020-05-24 11:07:12][Logger.py][info][INFO][45]  Epoch: 0001 loss_train: 6.3224 loss_val: 5.6142 time: 1.0291s
+[2020-05-24 11:07:14][Logger.py][info][INFO][45]  Epoch: 0002 loss_train: 5.9107 loss_val: 5.1981 time: 1.0922s
+[2020-05-24 11:07:15][Logger.py][info][INFO][45]  Epoch: 0003 loss_train: 5.5193 loss_val: 4.8124 time: 1.0704s
+[2020-05-24 11:07:16][Logger.py][info][INFO][45]  Epoch: 0004 loss_train: 5.1446 loss_val: 4.4593 time: 1.0678s
+[2020-05-24 11:07:17][Logger.py][info][INFO][45]  Epoch: 0005 loss_train: 4.7880 loss_val: 4.1388 time: 1.1039s
+[2020-05-24 11:07:18][Logger.py][info][INFO][45]  Epoch: 0006 loss_train: 4.3850 loss_val: 3.8352 time: 1.0815s
+[2020-05-24 11:07:19][Logger.py][info][INFO][45]  Epoch: 0007 loss_train: 4.1591 loss_val: 3.5476 time: 1.2193s
+[2020-05-24 11:07:20][Logger.py][info][INFO][45]  Epoch: 0008 loss_train: 3.8550 loss_val: 3.2836 time: 1.0905s
+[2020-05-24 11:07:21][Logger.py][info][INFO][45]  Epoch: 0009 loss_train: 3.6048 loss_val: 3.0474 time: 1.0750s
+[2020-05-24 11:07:22][Logger.py][info][INFO][45]  Epoch: 0010 loss_train: 3.3808 loss_val: 2.8172 time: 1.0648s
+[2020-05-24 11:07:24][Logger.py][info][INFO][45]  Epoch: 0011 loss_train: 3.0463 loss_val: 2.5973 time: 1.1393s
+[2020-05-24 11:07:25][Logger.py][info][INFO][45]  Epoch: 0012 loss_train: 2.8137 loss_val: 2.3835 time: 1.1165s
+[2020-05-24 11:07:26][Logger.py][info][INFO][45]  Epoch: 0013 loss_train: 2.6650 loss_val: 2.1814 time: 1.1593s
+[2020-05-24 11:07:27][Logger.py][info][INFO][45]  Epoch: 0014 loss_train: 2.4088 loss_val: 1.9842 time: 1.1490s
+[2020-05-24 11:07:28][Logger.py][info][INFO][45]  Epoch: 0015 loss_train: 2.2285 loss_val: 1.8013 time: 1.1121s
+[2020-05-24 11:07:29][Logger.py][info][INFO][45]  Epoch: 0016 loss_train: 2.0481 loss_val: 1.6634 time: 1.1480s
+[2020-05-24 11:07:30][Logger.py][info][INFO][45]  Epoch: 0017 loss_train: 1.8684 loss_val: 1.5537 time: 1.1238s
+[2020-05-24 11:07:32][Logger.py][info][INFO][45]  Epoch: 0018 loss_train: 1.7629 loss_val: 1.4480 time: 1.1913s
+[2020-05-24 11:07:33][Logger.py][info][INFO][45]  Epoch: 0019 loss_train: 1.6636 loss_val: 1.3431 time: 1.1753s
+[2020-05-24 11:07:34][Logger.py][info][INFO][45]  Epoch: 0020 loss_train: 1.5347 loss_val: 1.2438 time: 1.0892s
+[2020-05-24 11:07:35][Logger.py][info][INFO][45]  Epoch: 0021 loss_train: 1.4299 loss_val: 1.1506 time: 1.1180s
+[2020-05-24 11:07:36][Logger.py][info][INFO][45]  Epoch: 0022 loss_train: 1.3426 loss_val: 1.0633 time: 1.1521s
+[2020-05-24 11:07:37][Logger.py][info][INFO][45]  Epoch: 0023 loss_train: 1.2203 loss_val: 0.9913 time: 1.1510s
+[2020-05-24 11:07:39][Logger.py][info][INFO][45]  Epoch: 0024 loss_train: 1.1215 loss_val: 0.9327 time: 1.2013s
+[2020-05-24 11:07:40][Logger.py][info][INFO][45]  Epoch: 0025 loss_train: 1.0928 loss_val: 0.8757 time: 1.1034s
+[2020-05-24 11:07:41][Logger.py][info][INFO][45]  Epoch: 0026 loss_train: 1.0032 loss_val: 0.8344 time: 1.1210s
+[2020-05-24 11:07:42][Logger.py][info][INFO][45]  Epoch: 0027 loss_train: 0.9524 loss_val: 0.8156 time: 1.1047s
+[2020-05-24 11:07:43][Logger.py][info][INFO][45]  Epoch: 0028 loss_train: 0.9033 loss_val: 0.8138 time: 1.1330s
+[2020-05-24 11:07:44][Logger.py][info][INFO][45]  Epoch: 0029 loss_train: 0.8893 loss_val: 0.8109 time: 1.1881s
+[2020-05-24 11:07:46][Logger.py][info][INFO][45]  Epoch: 0030 loss_train: 0.8829 loss_val: 0.8065 time: 1.1709s
+[2020-05-24 11:07:47][Logger.py][info][INFO][45]  Epoch: 0031 loss_train: 0.8591 loss_val: 0.8013 time: 1.1402s
+[2020-05-24 11:07:48][Logger.py][info][INFO][45]  Epoch: 0032 loss_train: 0.8558 loss_val: 0.7935 time: 1.1584s
+[2020-05-24 11:07:49][Logger.py][info][INFO][45]  Epoch: 0033 loss_train: 0.8405 loss_val: 0.7847 time: 1.1015s
+[2020-05-24 11:07:50][Logger.py][info][INFO][45]  Epoch: 0034 loss_train: 0.8248 loss_val: 0.7767 time: 1.2041s
+[2020-05-24 11:07:51][Logger.py][info][INFO][45]  Epoch: 0035 loss_train: 0.8212 loss_val: 0.7735 time: 1.1571s
+[2020-05-24 11:07:53][Logger.py][info][INFO][45]  Epoch: 0036 loss_train: 0.8164 loss_val: 0.7711 time: 1.1341s
+[2020-05-24 11:07:54][Logger.py][info][INFO][45]  Epoch: 0037 loss_train: 0.8146 loss_val: 0.7668 time: 1.1122s
+[2020-05-24 11:07:55][Logger.py][info][INFO][45]  Epoch: 0038 loss_train: 0.8051 loss_val: 0.7614 time: 1.1164s
+[2020-05-24 11:07:56][Logger.py][info][INFO][45]  Epoch: 0039 loss_train: 0.8038 loss_val: 0.7584 time: 1.0807s
+[2020-05-24 11:07:57][Logger.py][info][INFO][45]  Epoch: 0040 loss_train: 0.7982 loss_val: 0.7530 time: 1.1737s
+[2020-05-24 11:07:58][Logger.py][info][INFO][45]  Epoch: 0041 loss_train: 0.7922 loss_val: 0.7444 time: 1.1577s
+[2020-05-24 11:07:59][Logger.py][info][INFO][45]  Epoch: 0042 loss_train: 0.7870 loss_val: 0.7370 time: 1.1342s
+[2020-05-24 11:08:01][Logger.py][info][INFO][45]  Epoch: 0043 loss_train: 0.7761 loss_val: 0.7303 time: 1.1794s
+[2020-05-24 11:08:02][Logger.py][info][INFO][45]  Epoch: 0044 loss_train: 0.7959 loss_val: 0.7208 time: 1.0934s
+[2020-05-24 11:08:03][Logger.py][info][INFO][45]  Epoch: 0045 loss_train: 0.7523 loss_val: 0.7077 time: 1.2280s
+[2020-05-24 11:08:04][Logger.py][info][INFO][45]  Epoch: 0046 loss_train: 0.7388 loss_val: 0.6971 time: 1.1360s
+[2020-05-24 11:08:05][Logger.py][info][INFO][45]  Epoch: 0047 loss_train: 0.7447 loss_val: 0.6966 time: 1.1004s
+[2020-05-24 11:08:06][Logger.py][info][INFO][45]  Epoch: 0048 loss_train: 0.7360 loss_val: 0.6954 time: 1.1301s
+[2020-05-24 11:08:08][Logger.py][info][INFO][45]  Epoch: 0049 loss_train: 0.7311 loss_val: 0.6954 time: 1.1953s
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  Epoch: 0050 loss_train: 0.7255 loss_val: 0.6949 time: 1.1613s
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  Optimization Finished!
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  Total time elapsed: 57.3569s
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  (1034, 248)
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  248 1034
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  disease
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  scoring
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  91
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1259]  findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=15.0.
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe MDL2 Assets' (segmdl2.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Candara' (Candarai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft JhengHei' (msjhl.ttc) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Symbol' (symbol.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft Yi Baiti' (msyi.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Calibri' (calibrii.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Courier New' (courbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (segoeui.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft JhengHei' (msjhbd.ttc) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Palatino Linotype' (palabi.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal bold normal>) = 4.971363636363637
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft YaHei' (msyhl.ttc) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal bold normal>) = 3.9713636363636367
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Candara' (Candaraz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DengXian' (Dengl.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Wingdings' (wingding.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (seguibli.ttf) italic normal black normal>) = 11.525
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal roman normal>) = 10.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Candara' (Candaral.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Calibri' (calibrili.ttf) italic normal light normal>) = 11.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Arial' (ariblk.ttf) normal normal black normal>) = 6.888636363636364
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe Script' (segoesc.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft PhagsPa' (phagspa.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Constantia' (constani.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Consolas' (consolaz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Gadugi' (gadugib.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Myanmar Text' (mmrtextb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Mongolian Baiti' (monbaiti.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe Print' (segoepr.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Candara' (Candara.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (segoeuil.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI Symbol' (seguisym.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DengXian' (Deng.ttf) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'FangSong' (simfang.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal roman normal>) = 11.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Calibri' (calibri.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Corbel' (corbel.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (seguisli.ttf) italic normal light normal>) = 11.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'DengXian' (Dengb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Candara' (Candarali.ttf) italic normal light normal>) = 11.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Arial' (arialbi.ttf) italic normal bold normal>) = 7.698636363636363
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Corbel' (corbeli.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (segoeuib.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Leelawadee UI' (LeelUIsl.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (seguibl.ttf) normal normal black normal>) = 10.525
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Yu Gothic' (YuGothL.ttc) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Sitka Small' (SitkaZ.ttc) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (segoeuiz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Palatino Linotype' (palab.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'MS Gothic' (msgothic.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Courier New' (courbi.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal roman normal>) = 11.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Yu Gothic' (YuGothM.ttc) normal normal medium normal>) = 10.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft New Tai Lue' (ntailu.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Corbel' (corbelb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Comic Sans MS' (comicz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Yu Gothic' (YuGothR.ttc) normal normal regular normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Lucida Console' (lucon.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Leelawadee UI' (LeelawUI.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'MV Boli' (mvboli.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Nirmala UI' (NirmalaS.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Franklin Gothic Medium' (framd.ttf) normal normal medium normal>) = 10.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (segoeuii.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'HoloLens MDL2 Assets' (holomdl2.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Tahoma' (tahoma.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Sitka Small' (SitkaB.ttc) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Myanmar Text' (mmrtext.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'MingLiU-ExtB' (mingliub.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Sitka Small' (SitkaI.ttc) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Malgun Gothic' (malgunbd.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft Himalaya' (himalaya.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Malgun Gothic' (malgun.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Cambria' (cambriai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft Sans Serif' (micross.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Ink Free' (Inkfree.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft Tai Le' (taile.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'SimHei' (simhei.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Consolas' (consolab.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'KaiTi' (simkai.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft New Tai Lue' (ntailub.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Ebrima' (ebrima.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft YaHei' (msyh.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Sitka Small' (Sitka.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Yu Gothic' (YuGothB.ttc) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Constantia' (constanb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Corbel' (corbelz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Nirmala UI' (Nirmala.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Corbel' (corbelli.ttf) italic normal light normal>) = 11.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Javanese Text' (javatext.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Palatino Linotype' (pala.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Nirmala UI' (NirmalaB.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft YaHei' (msyhbd.ttc) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Franklin Gothic Medium' (framdit.ttf) italic normal medium normal>) = 11.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI Historic' (seguihis.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Calibri' (calibril.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Arial' (arialbd.ttf) normal normal bold normal>) = 6.698636363636363
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Corbel' (corbell.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Leelawadee UI' (LeelaUIb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Cambria' (cambria.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft JhengHei' (msjh.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Candara' (Candarab.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (segoeuisl.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Tahoma' (tahomabd.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Consolas' (consolai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'SimSun-ExtB' (simsunb.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'SimSun' (simsun.ttc) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Sylfaen' (sylfaen.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Calibri' (calibrib.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Comic Sans MS' (comici.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (seguili.ttf) italic normal light normal>) = 11.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Ebrima' (ebrimabd.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft Tai Le' (taileb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Constantia' (constan.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'MT Extra' (mtextra.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Gabriola' (Gabriola.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Consolas' (consola.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (seguisb.ttf) normal normal semibold normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Cambria' (cambriaz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe Script' (segoescb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Lucida Sans Unicode' (l_10646.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Microsoft PhagsPa' (phagspab.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI' (seguisbi.ttf) italic normal semibold normal>) = 11.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Palatino Linotype' (palai.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Calibri' (calibriz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Malgun Gothic' (malgunsl.ttf) normal normal light normal>) = 10.24
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Cambria' (cambriab.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'icomoon' (iqiyi_logov6.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Marlett' (marlett.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe UI Emoji' (seguiemj.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Bahnschrift' (bahnschrift.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Times New Roman' (times.ttf) normal normal roman normal>) = 10.145
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Gadugi' (gadugi.ttf) normal normal 400 normal>) = 10.05
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Constantia' (constanz.ttf) italic normal bold normal>) = 11.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1271]  findfont: score(<Font 'Segoe Print' (segoeprb.ttf) normal normal bold normal>) = 10.335
+[2020-05-24 11:08:09][font_manager.py][_findfont_cached][DEBUG][1294]  findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=15.0 to DejaVu Sans ('E:\\Program Files\\Python37\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  Test set results:loss= 0.2472
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  0.7337629293579466
+[2020-05-24 11:08:09][Logger.py][info][INFO][45]  程序执行结束

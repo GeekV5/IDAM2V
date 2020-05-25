@@ -289,25 +289,24 @@ def plot_gaussian_distribution(h1, h2):
 
 
 def calculate_pcc_old(data, data_source):
-    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, 'calculating PCC distance')
+    logger.info('calculating PCC distance')
     rows, cols = data.shape
     pcc_list = []
     scaler = StandardScaler()
     scaler.fit(data)
     data = scaler.transform(data)
-    print(sys._getframe().f_lineno, data.shape)
+    logger.info(sys._getframe().f_lineno, data.shape)
     for i in range(rows):  # rows are the number of rows in the matrix.
         pcc_list = pcc_list + [stats.pearsonr(data[i], data[j])[0] for j in range(i) if j != i]
 
-    print(sys._getframe().f_lineno, len(pcc_list))
+    logger.info('len(pcc_list)' + len(pcc_list))
 
     plot_hist_distance(pcc_list, 'PCC', data_source)
     return pcc_list
 
 
 def calculate_pcc_hist(mRNA_data, lncRNA_data):
-    print(sys._getframe().f_lineno, 'calculating PCC distance')
-
+    logger.info('calculating PCC distance')
     corr_pval = []
     corr_ind = []
     for i, mval in enumerate(lncRNA_data):
@@ -360,8 +359,7 @@ def calculate_pcc_fast(A, B):
 
 
 def calculate_pcc(mRNA_data, lncRNA_data):
-    print(sys._getframe().f_lineno, 'calculating PCC distance')
-
+    logger.info('calculating PCC distance')
     corr_pval = []
     corr_ind = []
     # pdb.set_trace()
@@ -389,8 +387,7 @@ def coexpression_hist_fig(disease_mRNA_data, mRNAlabels, disease_lncRNA_data, ln
 
 
 def coexpression_based_prediction(disease_mRNA_data, mRNAlabels, disease_lncRNA_data, lncRNA_list, mRNA_list, fw, k=1):
-    print(sys._getframe().f_lineno, 'k:', k)
-
+    logger.info('k:' + k)
     posi_itemindex = np.where(mRNAlabels == 1)[0]
     inner_data = disease_mRNA_data[posi_itemindex, :]
     corr_pval, corr_ind = calculate_pcc(inner_data, disease_lncRNA_data)
@@ -411,8 +408,7 @@ def coexpression_based_prediction(disease_mRNA_data, mRNAlabels, disease_lncRNA_
 
 def coexpression_knn_based_prediction(disease_mRNA_data, mRNAlabels, disease_lncRNA_data, lncRNA_list, mRNA_list, fw,
                                       k=15):
-    print(sys._getframe().f_lineno, 'k:', k)
-
+    logger.info('k:' + k)
     corr_pval = calculate_pcc_fast(disease_mRNA_data, disease_lncRNA_data)
     y_ensem_pred = []
     posi_itemindex = np.where(mRNAlabels == 1)[0]
@@ -494,9 +490,8 @@ def read_normalized_series_file(series_file, take_median=True):
             merge_probe_expression_dict[key] = [prob, gene_symbol] + [inside_val for inside_val in final_express_vals]
         except:
             pdb.set_trace()
-            print(sys._getframe().f_lineno, final_express_vals)
-
-            print(sys._getframe().f_lineno, prob, gene_symbol)
+            logger.info(final_express_vals)
+            logger.info(prob + ' ' + gene_symbol)
 
     return merge_probe_expression_dict
 
@@ -527,7 +522,7 @@ def get_mean_expression_for_tissue_multiple_sampels(samples, expression_dict, us
 
 
 def read_human_RNAseq_expression(RNAseq_file='data/gencodev7/genes.fpkm_table', gene_name_ensg=None, log2=True):
-    print(sys._getframe().f_lineno, 'read expresion file: ', RNAseq_file)
+    logger.info('read expresion file: ' + RNAseq_file)
     data_dict = {}
     fp = open(RNAseq_file, 'r')
     head = True
@@ -574,7 +569,7 @@ def read_gtex_gene_map(map_file='data/gtex/xrefs-human.tsv'):
 # 读取GTEx数据集
 def read_gtex_expression(RNAseq_file='data/gtex/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz',
                          gene_type_dict=None, log2=True):
-    print(sys._getframe().f_lineno, 'read expresion file: ', RNAseq_file)
+    logger.info('Read Expresion File: ' + RNAseq_file)
     # entrid_ensemid = read_gtex_gene_map()
     data_dict = {}
     fp = gzip.open(RNAseq_file, 'rb')
@@ -590,7 +585,7 @@ def read_gtex_expression(RNAseq_file='data/gtex/GTEx_Analysis_v6p_RNA-seq_RNA-Se
             head = False
             values = line.decode().rstrip('\r\n').split('\t')[2:]
             samples = [val for val in values]
-            print(sys._getframe().f_lineno, '# of tissues', len(samples))
+            logger.info('# of tissues:' + str(len(samples)))
             continue
         else:
             values = line.decode().rstrip('\r\n').split('\t')
@@ -616,8 +611,7 @@ def read_gtex_expression(RNAseq_file='data/gtex/GTEx_Analysis_v6p_RNA-seq_RNA-Se
 
 
 def read_evolutionary_expression_data(input_file='data/GSE43520/genes.fpkm_table', use_mean=False, log2=True):
-    print(sys._getframe().f_lineno, 'read expresion file: ', input_file)
-
+    logger.info('read expresion file: ' + input_file)
     data_dict = {}
     fp = open(input_file, 'r')
     head = True
@@ -640,8 +634,7 @@ def read_evolutionary_expression_data(input_file='data/GSE43520/genes.fpkm_table
 
 
 def read_evolutionary_expression_data_old(input_file, use_mean=False, log2=True):
-    print(sys._getframe().f_lineno, 'read expresion file: ', input_file)
-
+    logger.info('read expresion file: ' + input_file)
     data_dict = {}
     fp = open(input_file, 'r')
     head = True
@@ -667,8 +660,7 @@ def read_evolutionary_expression_data_old(input_file, use_mean=False, log2=True)
 
 def read_average_read_to_normalized_RPKM(input_file='data/GSE30352/genes.fpkm_table', readlength=75, use_mean=False,
                                          log2=True):
-    print(sys._getframe().f_lineno, 'read expresion file: ', input_file)
-
+    logger.info('read expresion file: ' + input_file)
     fp = open(input_file, 'r')
     head = True
     express_vals = {}
@@ -691,7 +683,7 @@ def read_average_read_to_normalized_RPKM(input_file='data/GSE30352/genes.fpkm_ta
 
 
 def read_average_read_to_normalized_RPKM_old(input_file, readlength=75, use_mean=False, log2=True):
-    print(sys._getframe().f_lineno, 'read expresion file: ', input_file)
+    logger.info('read expresion file: ' + input_file)
     fp = open(input_file, 'r')
     head = True
     total_exp_vals = []
@@ -861,8 +853,7 @@ def get_ensg_ensp_map():
 
 def read_DISEASE_database(include_textming=False, confidence=2, ensg_ensp_map=None):
     # ensp_to_ensg_map = get_ENSP_ENSG_map()
-    print(sys._getframe().f_lineno, confidence)
-
+    logger.info(confidence)
     disease_gene_dict = {}
     whole_disease_gene_dict = {}
     disease_name_map = {}
@@ -907,8 +898,6 @@ def read_result_mrna(result_file):
             label = [int(val) for val in values[1:]]
         elif 'ROC_probability' in line:
             probability = [float(val) for val in values[1:]]
-            print('label:', label)
-            print('proba', probability)
             fpr, tpr, thresholds = roc_curve(label, probability)  # probas_[:, 1])
             roc_auc = auc(fpr, tpr)
             tmp_resu = tmp_resu + [roc_auc]
@@ -973,7 +962,7 @@ def plot_bar_imp(imp_list, disease, imp_file, tissues, ylabel='Importance score'
 
 
 def plot_tissue_importance(result_imp_file):
-    print(sys._getframe().f_lineno, 'ploting tissue iportance')
+    logger.info('ploting tissue iportance')
     fp = open(result_imp_file, 'r')
     disease = ''
     index = 0
@@ -1027,7 +1016,7 @@ def calculate_vector_length(data, data_source, norm=2):
 
 
 def plot_hist_distance(data_list, distance_type, data_source, genetype='mRNA', norm=2):
-    print(sys._getframe().f_lineno, 'plot histogram fig')
+    logger.info('plot histogram fig')
     fig, ax = plt.subplots()
     # ax = fig.add_subplot(111)
     # weights = np.ones_like(data_list)/len(data_list)
@@ -1040,9 +1029,9 @@ def plot_hist_distance(data_list, distance_type, data_source, genetype='mRNA', n
 
 
 def calculate_euclidean_distance(data, data_source):
-    print(sys._getframe().f_lineno, 'calculating Euclidean distance')
+    logger.info('calculating Euclidean distance')
     rows, cols = data.shape
-    print(sys._getframe().f_lineno, rows, cols)
+    logger.info(rows + '' + cols)
     # data_pcc = np.zeros(rows, cols)
     euclidean_list = []
     data = normalize(data, axis=0)
@@ -1309,7 +1298,7 @@ def read_string_interaction(string_file='data/9606.protein.links.v10.txt.gz', cu
             interact_pair[(gene1, gene2)] = score
             # interact_pair.setdefault(gene1, []).append(gene2)
 
-    print(sys._getframe().f_lineno, len(interact_pair), len(all_genes))
+    logger.info('len(interact_pair):' + str(len(interact_pair)) + ' len(all_genes):' +str(len(all_genes)))
 
     return interact_pair, all_genes
 
@@ -1342,7 +1331,7 @@ def read_ncrna_interaction(ncrna_file='data/9606.v1.combined.tsv.gz', cutoff=0.1
             interact_pair[(mirna, gene)] = score
             # interact_pair.setdefault(mirna, []).append(gene)
 
-    print(sys._getframe().f_lineno, len(interact_pair), len(genes), len(mirna_set))
+    logger.info(str(len(interact_pair)) + ' ' + str(len(genes)) + ' ' + str(len(mirna_set)))
 
     return interact_pair, genes, mirna_set
 
@@ -1425,7 +1414,7 @@ def read_expression_data(input_file, data=3):
 
     all_mrna_len = len(all_disease_ensg)
     all_mrna_set = set(all_disease_ensg)
-    print(sys._getframe().f_lineno, all_mrna_len)
+    logger.info(all_mrna_len)
 
     filter_mirna_set = set()
     new_rain_interaction = {}
@@ -1455,7 +1444,7 @@ def read_expression_data(input_file, data=3):
                 adj[i, j] = 1
                 adj[j, i] = 1
 
-    print(sys._getframe().f_lineno, 'non zero', np.count_nonzero(adj))
+    logger.info('non zero' + ' ' + str(np.count_nonzero(adj)))
     string_interaction = {}
     new_rain_interaction = {}
     # features
@@ -1478,11 +1467,11 @@ def read_expression_data(input_file, data=3):
             new_mirna_disease[mirna_ensg] = val
 
     # mirna_disease = {}
-    print(sys._getframe().f_lineno, len(new_mirna_disease))
+    logger.info('len(new_mirna_disease):' + str(len(new_mirna_disease)))
     # labels
     labels = []
     all_dis = list(all_dis)
-    print(sys._getframe().f_lineno, 'disease', len(all_dis))
+    logger.info('disease:' + str(len(all_dis)))
 
     for gene in all_exports:
         init_labels = np.array([0] * len(all_dis))
@@ -1589,10 +1578,10 @@ def train(epoch, model, optimizer, features, adj, idx_train, labels, idx_val, cr
     # pdb.set_trace()
     # print(output[idx_val], labels[idx_val])
     loss_val = criteria(output[idx_val], labels[idx_val])
-    print(sys._getframe().f_lineno, 'Epoch: {:04d}'.format(epoch + 1),
-          'loss_train: {:.4f}'.format(loss_train.item()),
-          'loss_val: {:.4f}'.format(loss_val.item()),
-          'time: {:.4f}s'.format(time.time() - t))
+    logger.info('Epoch: {:04d}'.format(epoch + 1)+' ' +
+                'loss_train: {:.4f}'.format(loss_train.item())+' ' +
+                'loss_val: {:.4f}'.format(loss_val.item())+' ' +
+                'time: {:.4f}s'.format(time.time() - t))
 
 
 def read_mirpd(inputfile):
@@ -1615,8 +1604,8 @@ def read_mirpd(inputfile):
 
 def calculate_auc(output, all_dis, new_mirna_disease, disease_miRNA_list):
     predi_mirna_dis = {}
-    print(sys._getframe().f_lineno, output.shape)
-    print(sys._getframe().f_lineno, len(all_dis), len(disease_miRNA_list))
+    logger.info(output.shape)
+    logger.info(str(len(all_dis))+ ' '+str(len(disease_miRNA_list)))
     dis_dict = {}
     mirna_dict = {}
     for i in range(len(disease_miRNA_list)):
@@ -1628,7 +1617,7 @@ def calculate_auc(output, all_dis, new_mirna_disease, disease_miRNA_list):
         # predi_mirna_dis[new_key] = output[i, j]
 
     disease_mirna_dict = {}
-    print(sys._getframe().f_lineno, 'disease')
+    logger.info('disease')
     all_dis_set = set(all_dis)
     for key, val in new_mirna_disease.items():
         for dis in val:
@@ -1638,13 +1627,13 @@ def calculate_auc(output, all_dis, new_mirna_disease, disease_miRNA_list):
     # pdb.set_trace()
     new_mirna_disease = {}
     # random.shuffle(disease_miRNA_list)
-    print(sys._getframe().f_lineno, 'scoring')
+    logger.info('scoring')
     mirna_set = set(disease_miRNA_list)
     all_dis = []
     disease_miRNA_list = []
     labels = []
     probs = []
-    print(sys._getframe().f_lineno, len(disease_mirna_dict.keys()))
+    logger.info(len(disease_mirna_dict.keys()))
     for dis, mirnas in disease_mirna_dict.items():
         # if mirna not in
         j = dis_dict[dis]
@@ -1685,14 +1674,15 @@ def test(model, features, adj, labels, idx_test, all_dis, new_mirna_disease, dis
     loss_test = criteria(output[idx_test], labels[idx_test])
     auc_test = calculate_auc(1 - output[idx_test].data.cpu().numpy(), all_dis, new_mirna_disease, disease_miRNA_list)
 
-    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, "| Test set results:",
-          "loss= {:.4f}".format(loss_test.item()))
-    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, '|', auc_test)
+    logger.info("Test set results:"+ "loss= {:.4f}".format(loss_test.item()))
+    logger.info(auc_test)
 
 
 def run_gcn():
     adj, features, labels, idx_train, idx_val, idx_test, all_dis, new_mirna_disease, disease_miRNA_data = read_expression_data(
         'data/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz', data=3)
+    # adj, features, labels, idx_train, idx_val, idx_test, all_dis, new_mirna_disease, disease_miRNA_data = read_expression_data(
+    #     'data/GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_median_tpm.gct.gz', data=3)
     # adj, features, labels, idx_train, idx_val, idx_test, all_dis, new_mirna_disease, disease_miRNA_data =
     # read_expression_data('/home/panxy/project/coexpression/data/GSE43520/genes.fpkm_table', data =1)
     # print(sys._getframe().f_lineno, new_mirna_disease)
@@ -1731,14 +1721,11 @@ def run_gcn():
     # Train model
     t_total = time.time()
     epochs = 50
-    log.logger
+    logger.info("Epochs:" + str(epochs))
     for epoch in range(epochs):
         train(epoch, model, optimizer, features, adj, idx_train, labels, idx_val, criterion)
 
-    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno, "| Optimization Finished!")
-    logger.info('Optimization Finished!')
-    print('方法：', sys._getframe().f_code.co_name, '行数：', sys._getframe().f_lineno,
-          "| Total time elapsed: {:.4f}s".format(time.time() - t_total))
+    logger.info("Optimization Finished!")
     logger.info("Total time elapsed: {:.4f}s".format(time.time() - t_total))
 
     # Testing
@@ -1746,6 +1733,6 @@ def run_gcn():
 
 
 # if __name__ == '__main__':
-logger.info('程序开始执行')
+logger.info('====Start====')
 run_gcn()
-logger.info('程序执行结束')
+logger.info('=====End=====')
