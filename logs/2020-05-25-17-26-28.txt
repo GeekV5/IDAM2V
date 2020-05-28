@@ -1,0 +1,10 @@
+[2020-05-25 17:26:28][INFO]  ====Start====
+[2020-05-25 17:26:28][INFO]  2
+[2020-05-25 17:26:32][INFO]  Read Expresion File: data/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_median_rpkm.gct.gz
+[2020-05-25 17:26:32][INFO]  # of tissues:53
+[2020-05-25 17:27:03][INFO]  len(interact_pair):1481757 len(all_genes):18883
+[2020-05-25 17:27:06][INFO]  173662 17686 1725
+[2020-05-25 17:27:07][INFO]  6188
+[2020-05-25 17:27:16][INFO]  non zero 435570
+[2020-05-25 17:27:16][INFO]  len(new_mirna_disease):548
+[2020-05-25 17:27:16][INFO]  disease:248

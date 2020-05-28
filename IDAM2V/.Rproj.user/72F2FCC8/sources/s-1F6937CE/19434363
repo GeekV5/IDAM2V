@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590543256707.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "19434363",
+    "lastKnownWriteTime" : 1590543408,
+    "last_content_update" : 1590543408578,
+    "path" : "F:/2020研一下学期hufuping/论文/食品微生物数据挖掘/Inferring Disease-Associated MicroRNAs Using Semi-supervised Multi-Label Graph Convolutional Networks/代码/DimiG_Python3/IDAM2V/load_data.R",
+    "project_path" : "load_data.R",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

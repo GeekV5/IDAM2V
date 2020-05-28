@@ -1732,7 +1732,8 @@ def run_gcn():
     test(model, features, adj, labels, idx_test, all_dis, new_mirna_disease, disease_miRNA_data, criterion)
 
 
-# if __name__ == '__main__':
-logger.info('====Start====')
-run_gcn()
-logger.info('=====End=====')
+if __name__ == '__main__':
+    logger.info('====Program Start====')
+    run_gcn()
+    logger.info('====Program End  ====')
+
